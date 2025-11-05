@@ -20,16 +20,14 @@ body {
 
 /* custom component layer */
 @layer components {
-
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
   .scrollbar-hide {
-    -ms-overflow-style: none; 
+    -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  
- 
+
   .scrolling-animation {
     display: flex;
     align-items: center;
@@ -38,27 +36,25 @@ body {
     animation: scroll 20s linear infinite;
   }
 
-  
   .tilt-animation {
     animation: tiltRotate 4s ease-in-out infinite alternate;
-  transform-style: preserve-3d;
-  transform-origin: center;
-  perspective: 800px;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    perspective: 800px;
   }
 
   @keyframes tilt {
     0% {
-    transform: rotateX(10deg) rotateY(10deg);
-  }
-  50% {
-    transform: rotateX(-10deg) rotateY(5deg);
-  }
-  100% {
-    transform: rotateX(10deg) rotateY(-10deg);
-  }
+      transform: rotateX(10deg) rotateY(10deg);
+    }
+    50% {
+      transform: rotateX(-10deg) rotateY(5deg);
+    }
+    100% {
+      transform: rotateX(10deg) rotateY(-10deg);
+    }
   }
 
- 
   @keyframes scroll {
     0% {
       transform: translateX(0);

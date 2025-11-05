@@ -48,7 +48,6 @@ export default function MainContent() {
             alt="Everything’s Fine"
             data-src="https://cdn2.suno.ai/video_upload_926b4db7-fd04-4099-928b-f23e99350787_video_upload_926b4db7-fd04-4099-928b-f23e99350787_cover_snapshot_0s_1760711725_image_large.jpeg"
             className="h-full w-full object-cover"
-            
             src="https://cdn2.suno.ai/video_upload_926b4db7-fd04-4099-928b-f23e99350787_video_upload_926b4db7-fd04-4099-928b-f23e99350787_cover_snapshot_0s_1760711725_image.jpeg?width=360"
           ></img>
 

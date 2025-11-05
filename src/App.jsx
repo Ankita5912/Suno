@@ -32,7 +32,7 @@ function App() {
         <FeaturesSection />
         <HeroSection />
         <CreatorShowcase />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
