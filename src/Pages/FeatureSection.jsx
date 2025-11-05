@@ -65,7 +65,7 @@ export default function FeaturesSection() {
               className="flex h-[460px] w-[376px] max-w-[90vw] min-w-[280px] flex-col items-start rounded-3xl border border-white/10 bg-[#ffffff0a] p-8"
               initial={{ opacity: 0, x: -20 }}
               animate={cardInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, ease: "easeIn" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               ref={cardRef}
             >
               <div className="mb-4 w-full">

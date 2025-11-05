@@ -9,7 +9,7 @@ import CreatorShowcase from "./Pages/Review";
 function App() {
   return (
     <div
-      className="bg-[#101012] scrollbar-hide relative flex h-full flex-col overflow-x-hidden overflow-y-scroll scroll-smooth"
+      className="bg-[#101012]  relative flex h-full flex-col overflow-x-hidden overflow-y-scroll scroll-smooth"
       style={{ scrollbarWidth: "none", scrollbarGutter: "inherit" }}
     >
       <div className="absolute inset-0 z-0 h-screen w-full">

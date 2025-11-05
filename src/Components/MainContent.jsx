@@ -31,7 +31,7 @@ export default function MainContent() {
   return (
     <div className="relative flex flex-col items-center text-center md:mx-auto mx-1 justify-center h-screen">
       <div
-        className="absolute right-0 cursor-pointer tilt shadow-2xl top-2/4 hidden w-40 md:w-48 lg:block lg:w-52"
+        className="absolute right-0 cursor-pointer tilt scroll- shadow-2xl top-2/4 hidden w-40 md:w-48 lg:block lg:w-52"
         style={{
           perspective: "1000px",
           transformStyle: "preserve-3d",
@@ -48,7 +48,7 @@ export default function MainContent() {
             alt="Everything’s Fine"
             data-src="https://cdn2.suno.ai/video_upload_926b4db7-fd04-4099-928b-f23e99350787_video_upload_926b4db7-fd04-4099-928b-f23e99350787_cover_snapshot_0s_1760711725_image_large.jpeg"
             className="h-full w-full object-cover"
-            loading="lazy"
+            
             src="https://cdn2.suno.ai/video_upload_926b4db7-fd04-4099-928b-f23e99350787_video_upload_926b4db7-fd04-4099-928b-f23e99350787_cover_snapshot_0s_1760711725_image.jpeg?width=360"
           ></img>
 

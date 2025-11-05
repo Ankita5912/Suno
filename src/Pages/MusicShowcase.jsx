@@ -75,13 +75,13 @@ export default function MusicShowcase() {
         </p>
       </motion.div>
 
-      <motion.div ref={ref} className=" mt-10 flex flex-row mb-0 w-fit  md:mt-[60px] md:mb-[150px] overflow-x-scroll overflow-auto gap-10 h-[380px]" style={{scrollbarWidth: "none"}} initial={{ opacity: 0, y: 50 }}
+      <motion.div ref={ref} className="mt-10 flex  mb-0 w-full  md:mt-[60px] scrollbar-hide md:mb-[150px] overflow-x-auto  gap-10 h-[380px]"  initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }} >
         {songs.map((song) => (
           <div
             key={song.id}
-            className="font-inter rounded-xl overflow-hidden md:w-57 w-45  hover:scale-101 transition-transform duration-300"
+            className="font-inter shrink-0 rounded-xl overflow-hidden md:w-57 w-45  hover:scale-101 transition-transform duration-300"
           >
             <div className="relative h-[280px] w-full origin-top overflow-hidden rounded-xl transition-transform duration-300 hover:scale-[102%] md:h-[311px]">
               <img

@@ -40,10 +40,12 @@ export default function CreatorShowcase() {
       <motion.div className="mx-auto max-w-[349px] text-center md:max-w-[744px]" initial={{ opacity: 10, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          ref={ref} style={{opacity: 1, transform: 'none'}}><h1 className="font-inter font-medium text-foreground-primary  select-none whitespace-pre-wrap text-[35px] leading-[35px] lg:text-[72px] lg:leading-16 ">Explore and get inspired</h1><h2 className="mt-4 text-4 text-foreground-primary text-white/70 max-w-[390px] mx-auto text-center text-[15px] leading-6 md:text-[18px]">Join the #1 AI music generator. Create songs, remix tracks, make beats, and share your music with millions — free forever.</h2></motion.div>
+        ref={ref} style={{ opacity: 1, transform: 'none' }}>
+        <h1 className="font-inter font-medium select-none whitespace-pre-wrap text-[35px] leading-[35px] lg:text-[72px] lg:leading-16 ">Explore and get inspired</h1><h2 className="mt-4 text-4 text-white/70 max-w-[390px] mx-auto text-center text-[15px] leading-6 md:text-[18px]">Join the #1 AI music generator. Create songs, remix tracks, make beats, and share your music with millions — free forever.</h2>
+      </motion.div>
 
       {/* Scrollable container */}
-      <motion.div className="mx-auto mt-[50px] max-w-[1254px] flex gap-5" initial={{ opacity: 0, y: 20 }}
+      <motion.div className="mx-auto mt-[50px] max-w-[1254px] flex gap-5 overflow-x-auto" initial={{ opacity: 0, y: 20 }}
           animate={cardInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
           ref={cardRef}>
