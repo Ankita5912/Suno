@@ -58,15 +58,15 @@ export default function FeaturesSection() {
           Everything you need to make music your way
         </motion.h2>
 
-        <div className="grid grid-cols-1 xl:grid-cols-3 sm:grid-cols-2 w-full items-center justify-items-center overflow-scroll mb-12 gap-10 justify-self-center">
+        <motion.div className="grid grid-cols-1 xl:grid-cols-3 sm:grid-cols-2 w-full items-center justify-items-center overflow-scroll mb-12 gap-10 justify-self-center" initial={{ opacity: 0, x: -100 }}
+              animate={cardInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 1, ease: "easeOut" }}
+              ref={cardRef}>
           {features.map((item, index) => (
-            <motion.div
+            <div
               key={index}
               className="flex h-[460px] w-[376px] max-w-[90vw] min-w-[280px] flex-col items-start rounded-3xl border border-white/10 bg-[#ffffff0a] p-8"
-              initial={{ opacity: 0, x: -20 }}
-              animate={cardInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              ref={cardRef}
+              
             >
               <div className="mb-4 w-full">
                 <h3 className="mb-4 font-inter text-5 leading-6 font-medium text-white">
@@ -81,9 +81,9 @@ export default function FeaturesSection() {
                 alt={item.title}
                 className="rounded-xl object-contain h-[180px] w-[348px]"
               />
-            </motion.div>
+            </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
